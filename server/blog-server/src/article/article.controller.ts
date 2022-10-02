@@ -19,6 +19,11 @@ export class ArticleController {
         return this.articleService.findOne(id);
     }
 
+    @Get('category/:category_id')
+    getByCategory(@Param('category_id') category_id: number){
+        return this.articleService.findByCategory(category_id);
+    }
+
     @Post()
     @HttpCode(HttpStatus.CREATED)
     @Header('Content-Type','Application/json')

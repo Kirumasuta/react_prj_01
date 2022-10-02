@@ -1,6 +1,6 @@
 import {Injectable} from "@nestjs/common";
 import { InjectModel } from "@nestjs/sequelize";
-import { Article } from './models/article.model';
+import { Article } from './model/article.model';
 import {CreateArticleDto} from "./dto/create-article.dto";
 import {ChangeArticleDto} from "./dto/change-article.dto";
 
@@ -16,8 +16,16 @@ export class ArticleService {
         return this.article_model.findAll();
     }
 
-    async findOne(category_id: number): Promise<Article> {
+    async findOne(id: number): Promise<Article> {
         return this.article_model.findOne({
+            where: {
+                id
+            }
+        });
+    }
+
+    async findByCategory(category_id: number): Promise<Article[]> {
+        return this.article_model.findAll({
             where: {
                 category_id
             }

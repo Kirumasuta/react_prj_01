@@ -9,13 +9,13 @@ export class CreateArticleDto {
     @IsNotEmpty()
     readonly content: string;
     @IsNotEmpty()
-    readonly create_date: Date;
+    readonly createdAt: Date;
     @IsNotEmpty()
-    readonly change_date: Date;
+    readonly updatedAt: Date;
     @IsNotEmpty()
     readonly user_id: number;
-    // @IsNotEmpty()
-    // readonly img: DataTypes.BlobDataType;
+    @IsNotEmpty()
+    readonly img: string;
     @IsNotEmpty()
     readonly category_id: number;
 }

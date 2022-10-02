@@ -1,7 +1,7 @@
 import {SequelizeModuleOptions, SequelizeOptionsFactory} from "@nestjs/sequelize";
 import {ConfigService} from "@nestjs/config";
 import {EnumConfig} from "./enumConfig/enumConfig";
-import {Article} from "../article/models/article.model";
+import {Article} from "../article/model/article.model";
 import {Injectable} from "@nestjs/common";
 
 @Injectable()
