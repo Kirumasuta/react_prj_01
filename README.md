@@ -2,8 +2,6 @@
 
 Backend
 _____
-
-
 Postman api collection -> https://www.getpostman.com/collections/23b2e1bb9748b770e1b4
 
 FW: NestJS
@@ -18,10 +16,12 @@ start -> cd .\server\blog-server\
 nest start
 _____
 
+
+
 Frontend
 _____
-
 FW: ReactJs/Typescript
 
 start -> cd .\client\blog-client\
 npm start
+_____
