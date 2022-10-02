@@ -10,7 +10,8 @@ ORM: SequelizeORM
 
 DB: PostgreSQL
 
-db connection config -> cat .\server\blog-server\.env
+db connection config -> cat .\server\blog-server\.env\
+db dump -> .\postgresql_dump.sql
 
 start -> cd .\server\blog-server\
 nest start
