@@ -39,7 +39,7 @@ export class ArticleService {
         article.preview_content = createArticle.preview_content;
         article.content = createArticle.content;
         article.user_id = createArticle.user_id;
-        //article.img = createArticle.img;
+        article.img = createArticle.img;
         article.category_id = createArticle.category_id;
 
         return article.save();

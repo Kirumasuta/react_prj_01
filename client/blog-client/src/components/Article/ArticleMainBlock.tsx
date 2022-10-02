@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {IArticle, IArticleCommentProps, ICategory} from "../../types/type";
-import {Article} from "./Article";
+import {IArticle, ICategory} from "../../types/type";
 import {CommentBlock} from "../Comment/CommentBlock";
 import {useParams} from "react-router";
 import {useNavigate} from "react-router-dom";

@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import {IArticle} from "../../types/type";
-import {ArticleMainBlock} from "./ArticleMainBlock";
 import {useNavigate} from "react-router-dom";
 
 interface IArticleProps {

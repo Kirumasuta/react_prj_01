@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
-import {IArticle, IArticleCommentProps, IComment} from "../../types/type";
+import {IArticleCommentProps, IComment} from "../../types/type";
 import {Comment} from "./Comment";
-import {CommentApi, UserApi} from "../../api";
+import {CommentApi} from "../../api";
 
 export const CommentBlock = (article_id: IArticleCommentProps) => {
 
@@ -30,6 +30,7 @@ export const CommentBlock = (article_id: IArticleCommentProps) => {
             content: e.target.comment.value,
             user_id: 1
         }
+        e.target.comment.value = '';
         CommentApi.createComment(comment)
             .catch(error => console.error('Error:', error))
             .then(res=>{

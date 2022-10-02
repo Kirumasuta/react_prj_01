@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {ICategory} from "../../types/type";
 import {useNavigate} from "react-router-dom";
 

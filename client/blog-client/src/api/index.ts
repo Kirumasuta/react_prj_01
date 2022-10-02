@@ -1,4 +1,4 @@
-import {IArticle, IArticleCommentProps, ICategory, IComment, ICommentState, IUser, IUserState} from "../types/type";
+import {IArticle, ICategory, IComment, ICommentState, IUser, IUserState} from "../types/type";
 import axios from "axios";
 
 export class UserApi {

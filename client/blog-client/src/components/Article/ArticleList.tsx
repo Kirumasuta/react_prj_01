@@ -1,4 +1,4 @@
-import React, {useEffect, useLayoutEffect, useReducer, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {IArticle} from "../../types/type";
 import {Article} from "./Article";
 import {useParams} from "react-router";
