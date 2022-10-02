@@ -1,6 +1,4 @@
 # react_prj_01
-test task
-_____
 
 Backend
 _____
